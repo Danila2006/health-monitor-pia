@@ -1,20 +1,20 @@
 # Privacy Impact Assessment – Smart Health Monitor
 
-This repository contains a Privacy Impact Assessment (PIA) for a wearable health monitoring system.
+Цей репозиторій містить оцінку впливу на приватність (PIA) для носимої системи моніторингу здоров’я.
 
-## Files
+## Файли
 
-- variant1-pia-health-monitor.md – full PIA document
-- data-flow-diagram.png – system data flow diagram
+- variant1-pia-health-monitor.md – повний документ PIA
+- data-flow-diagram.png – діаграма потоку даних системи
 
-## System
+## Система
 
-Wearable device that collects:
-- heart rate
-- activity
-- sleep data
-- geolocation
+Носимий пристрій, який збирає:
+- серцевий ритм
+- фізичну активність
+- дані про сон
+- геолокацію
 
-Data flow:
+Потік даних:
 
-Wearable Device → Mobile App → Cloud Platform → Data Storage → User
+Носимий пристрій → Мобільний застосунок → Хмарна платформа → Сховище даних → Користувач
