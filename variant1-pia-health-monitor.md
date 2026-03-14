@@ -1,77 +1,77 @@
-# Privacy Impact Assessment (PIA)
-## Smart Health Monitoring Wearable
+# Оцінка впливу на приватність (Privacy Impact Assessment, PIA)
+## Розумний носимий пристрій моніторингу здоров’я
 
-### 1. System Description
+### 1. Опис системи
 
-**Device Name:** HealthTrack Smart Band
+**Назва пристрою:** HealthTrack Smart Band
 
-**Overview:**  
-HealthTrack Smart Band is a wearable health monitoring device designed to collect biometric and behavioral data and provide health insights via a mobile application and cloud platform.
+**Опис:**  
+HealthTrack Smart Band — це носимий пристрій для моніторингу здоров’я, призначений для збору біометричних і поведінкових даних та надання користувачам інформації про стан здоров’я через мобільний застосунок і хмарну платформу.
 
-### Functions
-- Heart rate monitoring
-- Activity tracking
-- Sleep analysis
-- GPS activity tracking
-- Health analytics via mobile app
+### Функції
+- Моніторинг серцевого ритму
+- Відстеження фізичної активності
+- Аналіз сну
+- GPS-відстеження активності
+- Аналітика здоров’я через мобільний застосунок
 
-### Data Collected
+### Дані, що збираються
 
-| Data Type | Description |
+| Тип даних | Description |
 |-----------|-------------|
-| Heart Rate | Continuous monitoring of pulse |
-| Activity Data | Steps, workouts, movement |
-| Sleep Data | Sleep duration and sleep phases |
-| Geolocation | GPS location during activities |
-| Device ID | Device identifier |
+| Серцевий ритм | Безперервний моніторинг пульсу |
+| Дані активності | Кроки, тренування, рух |
+| Дані про сон | Тривалість сну та фази сну |
+| Геолокація | GPS-місцезнаходження під час активності |
+| ID пристрої | Ідентифікатор пристрою |
 
-### Purpose of Data Processing
-- Provide personal health analytics
-- Track activity and wellness trends
-- Deliver personalized recommendations
-- Improve algorithms and services
+### Мета обробки даних
+- Надання персональної аналітики здоров’я
+- Відстеження фізичної активності та стану здоров’я
+- Надання персоналізованих рекомендацій
+- Покращення алгоритмів та сервісів
 
 ---
 
-# 2. Risk Analysis
+# 2. Аналіз ризиків
 
-| Risk ID | Risk Description | Severity | Likelihood |
+| ID ризику | Опис ризику | Серйозність | Ймовірність |
 |-------|------------------|----------|-----------|
-| R1 | Unauthorized access to health data | High | Medium |
-| R2 | Data leakage during transmission | High | Medium |
-| R3 | Tracking user's physical location | High | Low |
-| R4 | Profiling or misuse of behavioral data | Medium | Medium |
-| R5 | Third-party data sharing without user awareness | High | Low |
+| R1 | Несанкціонований доступ до медичних даних | Висока | Середня |
+| R2 | Витік даних під час передачі | Висока | Середня |
+| R3 | Відстеження фізичного місцезнаходження користувача | Висока | Низька |
+| R4 | Профілювання або неправомірне використання поведінкових даних | Середня | Середня |
+| R5 | Передача даних третім сторонам без відома користувача | Висока | Низька |
 
 ---
 
-# 3. Mitigation Strategies
+# 3. Стратегії зменшення ризиків (Mitigation)
 
-| Risk ID | Mitigation Strategy | Responsible Party |
+| ID ризику | Стратегія зменшення ризику | Відповідальна сторона |
 |-------|--------------------|------------------|
-| R1 | Encryption and secure authentication | Manufacturer / Platform |
-| R2 | TLS encrypted communication | Platform |
-| R3 | Option to disable GPS tracking | User / Platform |
-| R4 | Data anonymization and minimization | Platform |
-| R5 | Explicit consent and transparency | Manufacturer / Platform |
+| R1 | Шифрування та безпечна автентифікація | Виробник / Платформа |
+| R2 | Захищена передача даних із використанням TLS | Платформа |
+| R3 | Можливість вимкнути GPS-відстеження | Користувач / Платформа |
+| R4 | Анонімізація та мінімізація даних | Платформа |
+| R5 | Явна згода користувача та прозорість обробки даних | Виробник / Платформа |
 
 ---
 
-# 4. Data Flow
+# 4. Потік даних (Data Flow)
 
-1. Wearable device collects biometric data
-2. Data transmitted via Bluetooth to mobile app
-3. Mobile app sends encrypted data to cloud platform
-4. Cloud platform stores and processes data
-5. Processed results returned to mobile application
+1. Носимий пристрій збирає біометричні дані.
+2. Дані передаються через Bluetooth до мобільного застосунку.
+3. Мобільний застосунок надсилає зашифровані дані до хмарної платформи.
+4. Хмарна платформа зберігає та обробляє дані.
+5. Оброблені результати повертаються до мобільного застосунку.
 
 ---
 
-# 5. Privacy by Design Recommendations
+# 5. Рекомендації Privacy by Design
 
-- Data minimization
-- User control over permissions
-- Encryption in transit and at rest
-- Transparent privacy policy
-- Limited data retention
-- Local processing when possible
+- Мінімізація збору даних
+- Контроль дозволів користувачем
+- Шифрування даних під час передачі та зберігання
+- Прозора політика конфіденційності
+- Обмежений термін зберігання даних
+- Локальна обробка даних, коли це можливо
